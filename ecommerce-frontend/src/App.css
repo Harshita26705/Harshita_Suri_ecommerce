@@ -1,0 +1,127 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Layout wrapper for consistent view rendering */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f8fafc;
+  text-align: left; /* Override center alignment from #root */
+}
+/* App.css */
+
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+/* Full-width layout wrapper */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Full-width navbar */
+.navbar {
+  width: 100%;
+  background-color: #0f172a;
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-left: 0%;
+}
+
+/* Centered content area */
+.main-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f8fafc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100%;               /* Full viewport height */
+  padding: 4rem 2rem;          /* Comfortable inner spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;     /* Vertically center content */
+  scroll-snap-align: start;    /* Optional: snap scrolling */
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* ✅ Prevent horizontal scroll */
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;               /* ✅ Start at left edge */
+  width: 100%;           /* ✅ Full width */
+  z-index: 1000;
+  background-color: #0f172a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box; /* ✅ Prevent overflow from padding */
+}

@@ -1,0 +1,131 @@
+/* === Global Variables === */
+:root {
+  --bg-color: #191f36;
+  --snd-bg-color: #262B40;
+  --text-color: #fff;
+  --accent-color: #646cff;
+
+  font-family: 'Nunito Sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: var(--text-color);
+  background-color: var(--bg-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* === Base Reset === */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+
+a {
+  font-weight: 500;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+a:hover {
+  color: #535bf2;
+}
+
+/* === Product Grid === */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+/* === Product Card === */
+.product-card {
+  background-color: var(--snd-bg-color);
+  color: var(--text-color);
+  border-radius: 8px;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+/* === Buttons === */
+button {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+button:hover {
+  background-color: #535bf2;
+}
+
+/* === Cart Section === */
+.cart {
+  background-color: var(--snd-bg-color);
+  color: var(--text-color);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 2rem;
+  width: 90%;
+  max-width: 600px;
+}
+
+/* === Header/Footer === */
+header, footer {
+  background-color: var(--snd-bg-color);
+  color: var(--text-color);
+  padding: 1rem 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 90%;
+  }
+
+  .cart {
+    width: 90%;
+  }
+}

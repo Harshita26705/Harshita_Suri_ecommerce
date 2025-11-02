@@ -1,0 +1,43 @@
+.contact-socials {
+  margin-top: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+.contact-footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 2rem;
+}
+
+
+.contact-footer a:hover {
+  text-decoration: underline;
+}
+
+.contact-details{
+    text-align: left;
+
+}
+
+.contact-footer, .contact-cta {
+    text-align: left;
+}
+
